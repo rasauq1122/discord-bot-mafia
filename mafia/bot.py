@@ -3,7 +3,7 @@ import func
 
 client = discord.Client()
 
-token = "NjU4MjAwNzgzMDczOTY4MTI4.Xf8-Tw.6xkhNNDhFXZxGF_099lf6QJ-D4Y"
+token = "NjU4MjAwNzgzMDczOTY4MTI4.XgrZZg.luqmQMtq-pFP4EdtLQkVJfnFi0s"
 
 global prefix
 prefix = ">>"
@@ -24,7 +24,7 @@ async def on_message(message):
     if message.author.bot:
         return None
 
-    command_dictionary = {"방만들기": func.make_room}
+    command_dictionary = {"방만들기": func.cmd_make_room, "관전": func.cmd_spec}
 
     channel = message.channel
     guild = message.guild
